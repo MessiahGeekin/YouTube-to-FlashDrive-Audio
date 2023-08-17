@@ -29,10 +29,7 @@ def download_audio(youtube_link, drive):
 
 
 def main():
-    os.system("cls" if os.name == "nt" else "clear")
-    
-    print("MAKE SURE FLASHDRIVE IS PLUGGED IN TO DEVICE".center(os.get_terminal_size().columns))
-    drive = input("FlasDrive Name: ")
+    drive = input("\n Flashdrive Name: ")
     if drive:
         while True:
             validate_flashdrive(drive)
